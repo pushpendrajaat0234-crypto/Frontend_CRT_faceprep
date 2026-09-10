@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 500px;
+            background-color: blanchedalmond;
+            border: 3px solid black;
+            display: flex;
+        }
+        .Scontainer{
+            height: 200px;
+            width: 200px;
+            background-color:azure;
+            border: 1px solid black;
+            margin: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            background-color: rgb(79, 79, 122);
+            margin: 2px;
+        }
+        .img{
+            margin: 3px;
+        }
+        @media (max-width: 400px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Scontainer">
+            <div class="text">I am a hero</div>
+            <div class="text">You are a Ass Hole</div>
+        </div>
+        <div class="img">
+            <img src="forest1.avif" alt="image1" width="200px">
+        </div>
+    </div>
+</body>
+</html>

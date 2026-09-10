@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify - Deep Focus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Spotify</div>
+      <nav class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="#">🔍 Search</a>
+        <a href="#">📚 Your Library</a>
+      </nav>
+      <div class="nav-playlist">
+        <button>➕ Create Playlist</button>
+        <button>💜 Liked Songs</button>
+      </div>
+      <div class="sidebar-footer">
+        <button class="lang-btn">🌐 English</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-nav">
+        <div></div>
+        <div class="auth-btns">
+          <button class="btn-signup">Sign up</button>
+          <button class="btn-login">Log in</button>
+        </div>
+      </header>
+
+      <!-- Playlist Hero -->
+      <section class="playlist-header">
+        <div class="playlist-cover">
+            <img src="0ea84754c2f7142bec4f18fbc8b7547a.jpg" height="190px" alt="">
+        </div>
+        <div class="playlist-info">
+          <span class="type">Playlist</span>
+          <h1 class="title">Deep Focus</h1>
+          <p class="desc">Keep calm and focus with ambient and post-rock music.</p>
+          <p class="meta"><strong>Spotify</strong> • 3,940,865 likes • 252 songs, about 10 hr</p>
+        </div>
+      </section>
+
+      <!-- Action Bar -->
+      <div class="action-bar">
+        <button class="play-btn">▶</button>
+        <button class="icon-btn">♡</button>
+        <button class="icon-btn">•••</button>
+      </div>
+
+      <!-- Track List Table -->
+      <table class="track-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Album</th>
+            <th>Date added</th>
+            <th>⏱</th>
+          </tr>
+        </thead>
+        <tbody id="track-body">
+          <tr class="track-row">
+            <td>1</td>
+            <td><strong>So Far So Good</strong><br><small>Sun Of They</small></td>
+            <td>Silent Hills</td>
+            <td>1 week ago</td>
+            <td>2:31</td>
+          </tr>
+          <tr class="track-row">
+            <td>2</td>
+            <td><strong>Apricity</strong><br><small>Imala Zir</small></td>
+            <td>Apricity</td>
+            <td>1 week ago</td>
+            <td>2:18</td>
+          </tr>
+          <tr class="track-row">
+            <td>3</td>
+            <td><strong>Solatium</strong><br><small>Imber Sun</small></td>
+            <td>Solatium</td>
+            <td>1 week ago</td>
+            <td>2:06</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

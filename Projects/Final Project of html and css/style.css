@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+.header-content{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo-icon{
+    height: 2.3rem;
+    width: 2.3rem;
+}
+.logo-text{
+    color: black;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.nav{
+    display: none;
+    gap: 1.5rem;
+}
+@media screen and (min-width: 768px){
+    .nav{
+        display: flex;
+    }
+}
+.nav-link{
+    color: #718096;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transform: color 0.1s;
+}
+.nav-link:hover{
+    color: rgb(153, 88, 152);
+}
+.contact-button{
+    display: none;
+    background-color: rgb(70, 70, 194);
+    color: white;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1.3rem;
+    transform: all 0.1s;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+@media screen and (min-width: 768px){
+    .contact-button{
+        display: block;
+    }
+}
+.contact-button:hover{
+    background-color: rgb(126, 126, 174);
+}
+.menu-button{
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+}
+@media screen and (max-width:768px) {
+    .menu-button{
+        display: block;
+    }
+}
+.menu-icon{
+    height: 1rem;
+    width: 1.3rem;
+}
+
+.main-section{
+   max-width: 1080px;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding: 0.4rem;
+   align-items: center;
+   margin: 0 auto;
+}
+.section-lavel{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(83, 83, 193);
+}
+.section-title{
+    font-size: 2.5rem;
+}
+.section-discreption{
+    color: rgb(79, 76, 76);
+    font-size: 1.15rem;
+}
+.start-button{
+   background-color: rgb(70, 70, 194);
+   color: white;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.tour-button{
+   background-color: rgb(34, 34, 42);
+   color: white;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.content-left{
+    animation: slideFromLeft 1s ease forwards;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap:1rem;
+    opacity: 0;
+}
+@keyframes slideFromLeft{
+  0% {
+     opacity: 0;
+     transform: translate(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.button-group{
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.start-button:hover{
+    background-color: rgb(126, 126, 174);
+}
+.tour-button:hover{
+    background-color: rgb(115, 115, 118);
+}
+
+.content-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container{
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgb(30, 30, 30);
+    height: 50vh;
+    width: 50vw;
+}
+.section-image{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .main-section{
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+    .content-left{
+        max-width: 50%;
+        text-align: left;
+    }
+    .button-group{
+        justify-content: start;
+    }
+    .section-title{
+        font-size: 3.5rem;
+    }
+    .image-container{
+        height: 70vh;
+        width: 35vw;
+    }
+    .section-lavel{
+        font-size: 1.1rem;
+    }
+    .section-discreption{
+        font-size: 1rem;
+        width: 80%;
+    }
+    
+}
+.company-content{
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: slideFromLeft 1s ease forwards;
+}
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 1rem;
+    background-color: rgb(238, 237, 237);
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+.company-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.svg-image{
+    width: 2rem;
+    height: 2rem;
+}
+.company-heading{
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.logo-tex{
+    font-size: 1.3rem;
+    color: rgb(66, 65, 65);
+}
+
+@media screen and (min-width: 640px) {
+    .company-grid{
+        grid-template-columns: repeat(4,1fr);
+
+    }
+}
+.feature-container{
+    background-color: rgb(226, 226, 226);
+    padding: 2rem 0;
+    text-align: center;
+}
+.feature-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.main-info h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-info p{
+    max-width: 90%;
+    font-size: 1rem;
+    color: rgb(66, 65, 65);
+}
+
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 2rem;
+}
+.feature-svg{
+    width: 2rem;
+    height: 2rem;
+}
+.icon-container{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 70%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.feature-card{
+    background-color: rgb(67, 112, 202);
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.feature-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.feature-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.feature-dis{
+   
+}
+.feature-card:nth-child(1){
+    background-color: #4a90e2;
+}
+.feature-card:nth-child(2){
+    background-color: #FF6289;
+}
+.feature-card:nth-child(3){
+    background-color: #fcbf58;
+}
+.feature-card:nth-child(4){
+    background-color: #44bfc3;
+}
+.feature-card:nth-child(5){
+    background-color: #77b05d;
+}
+.feature-card:nth-child(6){
+    background-color: #7d78b1;
+}
+
+@media screen and (max-width: 740px) {
+    .feature-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

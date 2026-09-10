@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify - Web Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">Spotify</div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">🏠 Home</a>
+        <a href="#">🔍 Search</a>
+        <a href="#">📚 Your Library</a>
+      </nav>
+      <div class="nav-playlist">
+        <button>➕ Create Playlist</button>
+        <button>💜 Liked Songs</button>
+      </div>
+      <div class="sidebar-footer">
+        <button class="lang-btn">🌐 English</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-nav">
+        <div></div>
+        <div class="auth-btns">
+          <button class="btn-signup">Sign up</button>
+          <button class="btn-login">Log in</button>
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Focus</h2>
+          <a href="#">Show all</a>
+        </div>
+        <div class="card-grid">
+          <div class="card" data-playlist="peaceful-piano">
+            <div class="card-img">
+                <img src="peacefulpiano.jpg" height="110px" alt="piano">
+                </div>
+            <h4>Peaceful Piano</h4>
+            <p>Peaceful piano to help you slow down, breathe, and...</p>
+          </div>
+          <div class="card" data-playlist="deep-focus">
+            <div class="card-img">
+                <img src="0ea84754c2f7142bec4f18fbc8b7547a.jpg" height="110px" width="150px" alt="Deep Focus">
+                </div>
+            <h4>Deep Focus</h4>
+            <p>Keep calm and focus with ambient and post-rock music.</p>
+          </div>
+          <div class="card" data-playlist="instrumental-study">
+            <div class="card-img" style="background:#755;">Instrumental Study</div>
+            <h4>Instrumental Study</h4>
+            <p>Focus with soft study music in the background.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Spotify Playlists</h2>
+          <a href="#">Show all</a>
+        </div>
+        <div class="card-grid">
+          <div class="card" data-playlist="top-hits">
+            <div class="card-img" style="background:#822;">Today's Top Hits</div>
+            <h4>Today's Top Hits</h4>
+            <p>Harry Styles is on top of the Hottest 50!</p>
+          </div>
+          <div class="card" data-playlist="rapcaviar">
+            <div class="card-img" style="background:#973;">RapCaviar</div>
+            <h4>RapCaviar</h4>
+            <p>New music from Lil Baby, Gucci Mane and DaBaby.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
